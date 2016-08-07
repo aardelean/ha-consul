@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    consul:
+      host: ${CONSUL_SERVER}
+      port: 8500
+    config:
+      uri: http://localhost:8003
