@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: ${SERVICE_NAME}
+  cloud:
+    config:
+      uri: http://${CONFIG_SERVER}:8090
+    consul:
+      host: ${CONSUL_SERVER}

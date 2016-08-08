@@ -3,6 +3,3 @@ server:
 ribbon:
   eureka:
     enabled:  false
-spring:
-  application:
-    name: ${SERVICE_NAME}

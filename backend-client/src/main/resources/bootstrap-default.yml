@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: backend-client
+  cloud:
+    config:
+      uri: http://localhost:8090
+    bus:
+      enabled: false
+    discovery:
+      enabled: false
+    consul:
+      enabled: false
+      config:
+        enabled: false
+

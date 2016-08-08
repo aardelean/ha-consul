@@ -13,7 +13,7 @@ class Application {
 
     @RequestMapping("/api/home")
     String home() {
-        "Hello World";
+        "FirstServer";
     }
 
     static void main(String[] args) {
