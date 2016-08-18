@@ -7,9 +7,3 @@ spring:
       failFast: true
     consul:
       host: ${CONSUL_SERVER}
-
-applications: zuul
-turbine:
-  aggregator:
-    clusterConfig: ${applications}
-  appConfig: ${applications}

@@ -3,3 +3,36 @@ server:
 ribbon:
   eureka:
     enabled:  false
+#security:
+#  sessions: ALWAYS
+#  oauth2:
+#    client:
+#      clientId: scyC6FkMjE
+#      clientSecret: B2dwnUTJJv4Tj5DnnG57
+#      accessTokenUri: https://appdirect.com/oauth/token
+#      userAuthorizationUri: https://appdirect.com/oauth/authorize
+#    resource:
+#      preferTokenInfo:  false
+#      userInfoUri: https://appdirect.com/oauth/openid/userinfo
+#security:
+#  sessions: ALWAYS
+#  oauth2:
+#    client:
+#      clientId: TnDtPykgih
+#      clientSecret: fe40xgPd2wwqI3o1tLGD
+#      accessTokenUri: https://test.appdirect.com/oauth/token
+#      userAuthorizationUri: https://test.appdirect.com/oauth/authorize
+#    resource:
+#      preferTokenInfo:  false
+#      userInfoUri: https://test.appdirect.com/oauth/openid/userinfo
+#security:
+#  sessions: ALWAYS
+#  oauth2:
+#    client:
+#      clientId: K8ZoGoEXw2
+#      clientSecret: 0tT3w8wSMBrjrnk9B9n5
+#      accessTokenUri: http://local.dev/oauth/token
+#      userAuthorizationUri: http://local.dev/oauth/authorize
+#    resource:
+#      preferTokenInfo:  false
+#      userInfoUri: http://local.dev/oauth/openid/userinfo

@@ -1,6 +1,5 @@
 server:
-  port: 8090
+  port: 9023
 spring:
   application:
     name: ${SERVICE_NAME}
-

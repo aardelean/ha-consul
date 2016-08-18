@@ -4,7 +4,6 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath "io.spring.gradle:dependency-management-plugin:0.5.6.RELEASE"
         classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.0.RELEASE")
     }
 }
@@ -24,8 +23,19 @@ repositories {
     mavenCentral()
 }
 
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-consul-dependencies:1.0.1.RELEASE"
+        mavenBom 'org.springframework.cloud:spring-cloud-dependencies:Brixton.RELEASE'
+    }
+}
+
 dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.3.11'
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-starter-actuator")
+    compile('org.springframework.cloud:spring-cloud-starter-hystrix:1.1.5.RELEASE')
+    compile('org.springframework.cloud:spring-cloud-starter-hystrix-dashboard:1.1.5.RELEASE')
+    compile 'org.springframework.cloud:spring-cloud-starter-config:1.1.1.RELEASE'
+    compile('org.springframework.cloud:spring-cloud-netflix-core:1.1.5.RELEASE')
 }
