@@ -32,10 +32,6 @@ class ZuulApplication extends WebSecurityConfigurerAdapter {
                 .anyRequest().authenticated()
     }
 
-//    @Bean
-//    EndpointConfiguration endpoint(){
-//        new EndpointConfiguration()
-//    }
     static void main(String[] args) {
         new SpringApplicationBuilder(ZuulApplication).run(args)
     }
